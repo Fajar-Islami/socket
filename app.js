@@ -9,7 +9,12 @@ app.listen(9090, console.log('Server running on PORT 9090'));
 app.get('/', (req, res) => {
   // res.sendFile('./views/index.html', { root: __dirname }); //params kedua root direktori
   // ejs jadi berubah
-  res.render('index')
+  const items=[
+    {name:'Puplen',price:2000},
+    {name:'Buku',price:3000},
+    {name:'Pensil',price:2500}
+  ]
+  res.render('index',{items})
 });
 
 app.get('/add-item', (req, res) => {

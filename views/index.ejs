@@ -26,26 +26,23 @@
 
     <div class="container">
       <ul class="collection with-header">
-        <li class="collection-item">
+
+         <% if(items.length>0){ %>
+          <%  items.forEach(item => { %>
+              <li class="collection-item">
           <div>
-            Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+            <%= item.name %> <%= item.price %> <a href="#!" class="secondary-content"><i class="material-icons">delete</i>
+              <i class="material-icons">edit</i></a>
           </div>
-        </li>
-        <li class="collection-item">
-          <div>
-            Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
-          </div>
-        </li>
-        <li class="collection-item">
-          <div>
-            Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
-          </div>
-        </li>
-        <li class="collection-item">
-          <div>
-            Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
-          </div>
-        </li>
+        </li>  
+        <%  }); %>
+          </>
+            
+        <% }else{ %>
+            <li>There no Items</li>
+          <%  } %>
+
+
       </ul>
     </div>
   </body>
