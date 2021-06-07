@@ -1,0 +1,21 @@
+Video 3
+Import materialize
+<!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Video 4
+https://ejs.co/#install
+npm i ejs
+
+
+di app.js tambah
+app.set('view engine','ejs')
+
+file dipanggil pake res.render()
